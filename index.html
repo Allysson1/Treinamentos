@@ -6,15 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu primeito Javasccript</title>
 </head>
-<body>
+<body onload="load()">
     
 <h1>
     Meu primeiro código em Javascript
 </h1>
 
+<!-- function usada aqui no arquivo introducao.js -->
+<button type="button" onclick="clicou()">Clique aqui</button>
+<!-- este <p> só aparece quando o botão é clicado -->
+<p id="agradecimento" onclick="redirecionar()"></p>
+
+<!-- usando o this, caso o id ou function's estejam ligados a outros elementos, não irá impactar em outros elementos ao mesmo tempo -->
+<p id="mouseover" onmouseover="trocar(this)" onmouseout="voltar(this)">passe o mouse aqui</p>
+
+<!-- o onchance coleta o valor qunado ocorre mudança de opção -->
+<select onchange="funcaochange(this)">
+    <option value="1">valor 1</option>
+    <option value="2">valor 2</option>
+    <option value="3">valor 3</option>
+</select>
+
+
 <!-- externar script -->
 <!-- colocar o link do script sempre no final do body -->
-<script src="/js/aprendendo-javascript.js"></script>
+<script src="/js/introducao.js"></script>
 
 </body>
 </html>
