@@ -1,36 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeito Javasccript</title>
+    <title>Meu primeito Javascript</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
-<body onload="load()">
-    
-<h1>
+
+<!-- aula dia  -->
+<!-- <body onload="load()"> -->
+
+<!-- <h1>
     Meu primeiro código em Javascript
-</h1>
+</h1> -->
+
+
+<!-- aula dia 23/12/2021 -->
 
 <!-- function usada aqui no arquivo introducao.js -->
-<button type="button" onclick="clicou()">Clique aqui</button>
+<!-- <button type="button" onclick="clicou()">Clique aqui</button> -->
 <!-- este <p> só aparece quando o botão é clicado -->
-<p id="agradecimento" onclick="redirecionar()"></p>
+<!-- <p id="agradecimento" onclick="redirecionar()"></p> -->
 
 <!-- usando o this, caso o id ou function's estejam ligados a outros elementos, não irá impactar em outros elementos ao mesmo tempo -->
-<p id="mouseover" onmouseover="trocar(this)" onmouseout="voltar(this)">passe o mouse aqui</p>
+<!-- <p id="mouseover" onmouseover="trocar(this)" onmouseout="voltar(this)">passe o mouse aqui</p> -->
 
 <!-- o onchance coleta o valor qunado ocorre mudança de opção -->
-<select onchange="funcaochange(this)">
-    <option value="1">valor 1</option>
-    <option value="2">valor 2</option>
-    <option value="3">valor 3</option>
-</select>
+<!-- <select onchange="funcaochange(this)"> -->
+<!-- <option value="1">valor 1</option> -->
+<!-- <option value="2">valor 2</option> -->
+<!-- <option value="3">valor 3</option> -->
+<!-- </select> -->
 
 
-<!-- externar script -->
-<!-- colocar o link do script sempre no final do body -->
-<script src="/js/introducao.js"></script>
+
+<!-- aula 27/12/2021 -->
+
+<body class="container">
+
+    <!-- consulta cep -->
+    <!-- <input id="cep"> 
+<button type="button" onclick="consultaCep()">consultar</button>
+<p id="logradouro"></p>
+<p id="cidade"></p>
+<p id="uf"></p> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand text-white">consulta cep</a>
+        <div class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="cep" aria-label="Search" id="cep">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="consultaCep()">Buscar</button>
+        </div>
+    </nav>
+
+
+    <div class="container cep">
+        <div class="row>">
+            <h3 id="titulocep">CEP</h3>
+        </div>
+
+        <div class="row">
+            <table class="table">
+
+                <tbody>
+                    <tr>
+                        <td>logradouro</td>
+                        <td id="logradouro"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Localidade</td>
+                        <td id="cidade"></td>
+                    </tr>
+
+                    <tr>
+                        <td>UF</td>
+                        <td id="uf"></td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+        </div>
+    </div>
+
+
+
+
+    <!-- externar script -->
+    <!-- colocar o link do script sempre no final do body -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 
 </body>
+
 </html>
