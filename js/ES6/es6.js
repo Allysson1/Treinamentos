@@ -38,3 +38,55 @@
 // console.log (soma2(4));
 
 
+// aula dia 05/02/2022
+
+// tipo de variavel SYMBOL permite criar valores únicos
+
+// funções com String
+
+// .length retorna a quantidade de caracteres de uma palavra
+const textSize = 'texto'.length;
+console.log(textSize);
+
+// .splitt  retornaa um array qyuebrando a string por um delimitaador
+const splitedText = 'texto'.split('x');
+console.log('\nArray com as posições separadas por delimitador: ', splitedText);
+
+// .replace busca por um valor e substitui por outtro
+const replacedText = 'texto'.replace('Text', 'txeT');
+console.log (replacedText);
+
+//.slice retorna uma "fatia do valor"
+const lastchar = 'texto'.slice(-1);
+console.log (lastchar);
+
+//0 é a primeira posição e -1 é eliminada
+const allWithoutlastChat = 'texto'.slice(0,-1);
+console.log(allWithoutlastChat);
+
+const secondToEnd = 'Tesxo'.slice(1);
+console.log(secondToEnd);
+
+//.substr retorna n caaracters a partir de uma posição, 0 é o inicio e 2 a quantidade de caracteres
+const twoCharsBeforeFirstPos = 'texto'.substr(0,2);
+console.log(twoCharsBeforeFirstPos);  
+
+
+
+//funções com números
+
+const myNumber = 12.4032;
+
+//converte para string
+const numberAsString = myNumber.toString();
+console.log(numberAsString);
+
+// converte para 2 números fixos
+const fixedTwoDecimals = myNumber.toFixed(2);
+console.log(fixedTwoDecimals);
+
+// tranforma uma string  em float (permite número quebrado)
+console.log (parseFloat('13.22'));
+
+//tranforma uma string em int (não permite número quebrado)
+console.log (parseInt('13.20')); 
