@@ -224,52 +224,91 @@
 // aula dia 13/02/2022
 
 // array normal
-var arr = ['apple', 'Banana', 'Orange', ['tomato']];
+// var arr = ['apple', 'Banana', 'Orange', ['tomato']];
 
-var apple = arr[0];
-var Banana = arr[1];
-var Orange = arr[2];
-var tomato = arr[3][0];
-
-
-// Destructuring Aassigment, um jeito maais fácil de fazer o array acima, mas com o mesmo  resultado;
-// destruction é bom, mas pode quebrar o codigo caso não seja bem executado com outro array dentro de um array, por exemplo, se a variavel [tomato2] não tiver o valor [tomato] para receber, ocorrerá erro, caso seja outra variavel que esteja apenas dentro de um unico array, recebera o valor undefined.
-var [apple2, banana2, Orange2, [tomato2]] = ['apple', 'Banana', 'Orange', ['tomato']];
-
-console.log(tomato2);
+// var apple = arr[0];
+// var Banana = arr[1];
+// var Orange = arr[2];
+// var tomato = arr[3][0];
 
 
-// complementos da função console
+// // Destructuring Aassigment, um jeito maais fácil de fazer o array acima, mas com o mesmo  resultado;
+// // destruction é bom, mas pode quebrar o codigo caso não seja bem executado com outro array dentro de um array, por exemplo, se a variavel [tomato2] não tiver o valor [tomato] para receber, ocorrerá erro, caso seja outra variavel que esteja apenas dentro de um unico array, recebera o valor undefined.
+// var [apple2, banana2, Orange2, [tomato2]] = ['apple', 'Banana', 'Orange', ['tomato']];
 
-// .log mostra retornos no console do navegador
-console.log('texto');
-
-// .warn retorna um alerta
-console.warn('texto amarelo como alerta');
-
-// .error
-console.error('texto vermelho com significado de erro');
-
-// .trace
-console.trace();
-
-// .group
-console.group('my group');
-// itens do grupo
-console.log('info inside group');
-console.log('more info inside group');
-// .groupEnd
-console.groupEnd('fim do grupo');
+// console.log(tomato2);
 
 
-// .time
-console.time('log time');
-setTimeout(() => {
- console.timeEnd('log time');   
-});
+// // complementos da função console
+
+// // .log mostra retornos no console do navegador
+// console.log('texto');
+
+// // .warn retorna um alerta
+// console.warn('texto amarelo como alerta');
+
+// // .error
+// console.error('texto vermelho com significado de erro');
+
+// // .trace
+// console.trace();
+
+// // .group
+// console.group('my group');
+// // itens do grupo
+// console.log('info inside group');
+// console.log('more info inside group');
+// // .groupEnd
+// console.groupEnd('fim do grupo');
 
 
-// .table
+// // .time
+// console.time('log time');
+// setTimeout(() => {
+//  console.timeEnd('log time');   
+// });
 
-console.table(['Allysson Ernandes', 'Estuda muito']);
-console.log('%c styled log', 'color: blue;');
+
+// // .table
+
+// console.table(['Allysson Ernandes', 'Estuda muito']);
+// console.log('%c styled log', 'color: blue;');
+
+
+
+// exercicio prático DIO 20/02/2022
+
+x = prompt();
+
+let lines = gets(x).split("\n");
+
+let num = parseInt(lines.shift());
+
+let init = num % 2 === 0 ? num + 1 : num;
+
+while (num<6){
+ 
+ num=num+1;
+ 
+ if (num % 2 === 1){
+ document.write(num);
+ };
+
+ num++;
+}
+
+
+
+
+
+// x = prompt();
+
+// cont = 0;
+// do {
+    
+// if (x % 2 != 0){
+//     document.write(x, "<br>");
+// }
+// cont++;
+// x++;
+// } while(cont < 12);
